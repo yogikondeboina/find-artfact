@@ -1,18 +1,16 @@
 name: artfact
 on: 
-  push: 
+   push: 
   
 jobs: 
   build: 
     runs-on: ubuntu-latest
-   
     steps: 
-     - name: create file
-       run: echo "hello yogi" > my_file.txt
-      
-     - name: uplode Artfact
-       uses: action/uplode-artfact@v3
-       with: 
+      - name: create file
+        run: echo "hello yogi" > my_file.txt
+      - name: uplode Artfact
+        uses: action/uplode-artfact@v3
+        with: 
           name: my-artfact
           path: my_file.txt
           retention-days: 5
