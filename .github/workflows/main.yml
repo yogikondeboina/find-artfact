@@ -8,12 +8,12 @@ jobs:
    
     steps: 
      - name: create file
-       run: echo "hello yogi" > my_art.txt
+       run: echo "hello yogi" > my_file.txt
       
      - name: uplode Artfact
        uses: action/uplode-artfact@v3
        with: 
           name: my-artfact
-          path: my_art.txt
+          path: my_file.txt
           retention-days: 5
       
